@@ -1,2 +1,22 @@
 /* LAYOUT STYLES */
 
+/* HELPER CLASSES */
+.windowed-container {
+	height: 100vh;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.padded-container {
+	padding-top: var(--pad-container); 
+	padding-bottom: var(--pad-container); 	
+}
+
+.activated {
+	overflow-x: hidden;
+}
+
+.gsap-fader {
+	opacity: 0;
+}

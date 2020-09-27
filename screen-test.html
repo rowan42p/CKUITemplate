@@ -28,31 +28,10 @@
 	</nav>
 	<!--CONTENT SECTION-->
 	<main id="main_content-container">
-		<div class="container-fluid windowed-container">
-			<div class="row justify-content-center">
-				<div class="col-10 text-center ">
-    				<h1>Hello Twitter world</h1>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid padded-container">
-			<div class="row justify-content-center">
-				<div class="col-10 text-center gsap-fader">
-    				<h2>This is a template</h2>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid padded-container">
-			<div class="row justify-content-center">
-				<div class="col-10 text-center gsap-fader">
-    				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aliquid dolorum quia minus assumenda debitis itaque voluptates cumque numquam voluptatibus? Ipsa assumenda laborum non in culpa provident impedit debitis quo.</h4>
-				</div>
-			</div>
-		</div>
 		<div class="container-fluid padded-container">
 			<div class="row justify-content-center">
 				<div class="col-10 text-center">
-    				<img src="img/olla-img.jpg" alt="">
+    				<button type="button" onclick="getResolution();" class="cta-btn">Get Resolution</button>
 				</div>
 			</div>
 		</div>
@@ -71,5 +50,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 	
 	<script src="js/app.js"></script>
+	<script>
+		function getResolution() {
+			alert("Your screen resolution is: " + screen.width + "x" + screen.height);
+		}
+    </script>
 </body>
 </html>
